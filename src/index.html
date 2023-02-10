@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dang Kim Thi JavaScript App</title>
+</head>
+
+<body>
+  <main>
+    <h1>Dang Kim Thi JavaScript App</h1>
+    <p>Loading content from the API: <b id="name">.....</b></p>
+  </main>
+  <script>
+    (async function() {
+      const { text } = await(await fetch('/api/message')).json();
+      document.querySelector('#name').textContent = text;
+    }());
+  </script>
+  <!-- viet dung chinh ta nhe tinh yeu ;) -->
+  <!-- cài thư viện  (để ý quyền admin)-->
+  <!-- cài thư viện xong rồi giờ thì mình start api nha ;) bằng terminal :D  -->
+  <!-- nhớ phải cài thư viện trc mới chạy đc :D  -->
+  <!-- test thử swa xem nhận đc thư viện chưa --> 
+  <!-- nhấn Ctrl + C nếu bạn muốn kết thúc terminal ;) -->
+</body>
+<!-- Bạn nhấn F1 (Fn + F1, Ctrl + shift + P) ==> open Command palette ;)  -->
+<!-- waitting .....  -->
+<!-- Step1: Done ;)  -->
+<!-- Step2: Create API ;) .... -->
+</html>
